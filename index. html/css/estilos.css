@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*VARIANTES DE COLOR*/
+
+:root {
+    --primary: #1173d4;
+    --primary-dack: #0a3d66;
+    --primary-hover: #8d5ba8;
+    --primary-light: #69f;
+    --background: #06182a;
+    --text-primary: #ffffff;
+    --text-secondary: #cbd5ef;
+    --tex-primary: var(--text-primary);
+    --tex-secundary: var(--text-secondary);
+    --border: rgba(255, 255, 255, 0.1);
+    --card-bg: #1e2936;
+    --shadow: rgba(0, 0, 0, 0, 0.3);
+    --input-bg: #1e293b;
+    --hsla-example: hsla (210, 100%, 56%, 1);
+    --text-muted: #94a3b8;
+    --tex-muted: var(--text-muted);
+}
+
+body {
+    font-family: system-ui;
+    background-color: var(--background);
+    color: var(--tex-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+
+}
+
+header {
+    border-bottom: 1px solid var(--border);
+    background: var(--background);
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.2;
+        text-wrap: balance;
+        /*display: flex;*/
+        align-items: center;
+        gap: 0.5rem;
+
+        color: var(--text-primary);
+
+    }
+
+    img {
+        color: var(--tex-primary-light);
+        background: rgba(193, 197, 199, 0.928);
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        padding: 1rem;
+    }
+
+
+
+    /*navegacion a otra páginas*/
+    nav {
+        align-items: center;
+        gap: 1rem;
+        display: flex;
+
+        a {
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            background-color: #334155;
+            padding: .5rem 1rem;
+            color: var(--text-primary);
+            display: inline-block;
+            font-size: 0.875rem;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.2s;
+            font-weight: 500;
+
+            &:hover,
+            &:focus {
+                color: var(--primary);
+                outline: none;
+            }
+        }
+    }
+
+    /* Botones del Header */
+    .navegacion {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+
+    header div.navegacion,
+    a {
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        background-color: #334155;
+        color: var(--text-primary);
+        display: inline-block;
+        font-size: 0.875rem;
+        font-weight: 700;
+        text-decoration: none;
+
+
+
+        &:hover,
+        &:focus {
+            color: var(--primary);
+            outline: none;
+        }
+
+        /* TODO */
+    }
+
+    .jobs-search section {
+        margin: 0;
+        padding: ;
+        width: auto;
+        margin-top: -100px;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding-top: -200px;
+
+        small {
+            font-size: .875rem;
+            opacity: .75;
+        }
+
+        p {
+            margin-top: 0.5rem;
+
+        }
+    }
+
+
+
+
+
+
+
+
+    .jobs-search,
+    article {
+        background-color: var(--card-bg);
+        padding: 2rem;
+        /*separación interior hacia afuera del contenedor */
+        margin-bottom: 26px;
+        /*separación exterior del elemento hacia fuerar */
+        border-radius: 10px;
+        /* margin-left: 26px;
+    margin-right: 26px;
+    margin-top: 26px;*/
+        text-align: center;
+        box-shadow: 4px 3px 4px #f2f4f3;
+
+
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        small {
+            font-size: .875rem;
+            opacity: .75;
+            text-align: center
+        }
+
+        p {
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+
+
+}
+
+.jobs-listing {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+
+}
+
+
+
+main> {
+
+
+
+
+    svg {
+        color: var(--primary-light);
+        background: rgba(0, 153, 255, 0.3);
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+        padding: 1rem;
+        display: block;
+        margin: 0 auto 1rem;
+
+    }
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    small {
+        font-size: .875rem;
+        opacity: .75;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+svg {
+    color: var(--primary-light);
+    background: rgba(0, 153, 255, 0.3);
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    padding: 1rem;
+    display: block;
+    margin: 0 auto 1rem;
+
+}
+
+p {
+    color: var(--text-muted);
+}
+
+h3 {
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+article p {
+    text-align: center;
+}
+
+main>section {
+
+    h1 {
+        text-align: center;
+        margin-top: auto;
+
+    }
+
+    p {
+        text-align: center;
+        background-color: var(--card-bg);
+    }
+
+}
+
+main>section>header {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
+}
+
+main>section:nth-child(1) {
+    position: relative;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+
+    h1 {
+        padding-bottom: 0px;
+    }
+
+    &>img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        mask-image: linear-gradient(to bottom, rgba(16, 25, 34, 1) 5%, rgba(16, 25, 34, 0) 80%);
+    }
+}
+
+@media (max-width: 640px) {
+    main>section:nth-child(1) {
+        height: 420px;
+    }
+
+    main>section:nth-child(1)>img {
+        object-fit: contain;
+        object-position: center top;
+
+    }
+}
+
+main>section:nth-child(2)>div>div:first-child p {
+    font-size: 1.125rem;
+    color: var(--text-muted);
+    margin: 0 auto;
+
+
+}
+
+/*caracteristicas de grid */
+
+main>section:nth-child(2) footer {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    gap: 16px;
+
+
+    /*para hscer un @media de grid, si tiene la pagina 280 px creará una columna, pero si tiene menos creará dos y si aun es pequeña creara 3*/
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+
+
+
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+form {
+    max-width: 42rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 1rem;
+}
+
+form div {
+    display: flex;
+    align-items: center;
+    background-color: var(--input-bg);
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px var(--shadow);
+    padding: 0.5rem;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+form span {
+    padding-left: 0.75rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+form input[type="text"] {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+form input[type="text"]::placeholder {
+    color: #64748b;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+    color: white;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    font-size: 1rem;
+    white-space: nowrap;
+
+    &:hover,
+    /* pseudo-clase que significa que el ratón está encima */
+    &:focus {
+        /* pseudo-clase que significa que el elemento tiene el foco */
+        outline: 2px solid white;
+        outline-offset: 2px;
+    }
+
+    &:active {
+        transform: scale(0, 90);
+    }
+
+}
+
+article {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    margin-bottom: 16px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    align-items: center;
+
+
+
+
+    svg {
+        color: var(--primary-light);
+        background: rgba(0, 153, 255, 0.3);
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+        padding: 16px;
+        display: block;
+        margin: 0 auto 1rem;
+
+
+    }
+
+    p {
+        color: var(--text-muted);
+
+    }
+
+    h3 {
+        font-weight: 500;
+
+    }
+
+
+
+
+
+
+
+
+}

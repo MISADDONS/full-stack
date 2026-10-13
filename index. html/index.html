@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es"> <!--<HTML LANG = es una etiqueta y   “es” es unatributo de lenguaje en este caso es español> las etiqueta siempre se tienen que abrir y cerrar  < />
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html y css</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<!--DESARROLLO FULL-STACK DESDE CERO https://youtu.be/mXpWhmJXV0o?is=U3 oSd9a9N075JrzYHTML es un lenguaje llamado
+    Hipertex Markup Languaje hipertex es untexto que hace tener enlaces a otra paginas web, textos dentro de la pagina
+    Markup es que estaremos elaborando etiquetas L Lenguaje de marcado donde creará toda la estructura de todo el
+    contenido Para crear el comienzo de una página html, deberiamos inserta el signo (! ) admiración negativo, e intro
+    donde nos saldrá todos los elementos y etiquetas del documento, el <!IDOCRTIPE html> le stá diciemndo al navegador
+    que e un documento html.
+
+    el HTML sirve para estructurar cualquier documento con etiquetas y atributos
+    EN LA ETIQUETA HTML entrará estructuralmente toddos los hijos , todo el digo estará dentro de el
+    nlace comandos en visual codi
+    https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+
+    comando lineas dentro del editor alt z
+    
+    PARA CUALQUIER CONSULTA DE ETIQUETAS  EN LA PAGINA (MDN)-->
+
+<body>
+    <header>
+        <img src="IMAGENES/logo.png" alt="Logo de Dev Job">
+        <h2>De Job</h2>
+
+        <nav>
+            <a href="">inicio</a>
+            <a href="https://jobtoday.com/es/landings/touch-trial-v2?utm_source=bing&utm_medium=cpc&utm_campaign=606938219&utm_content=1167683312006524&utm_term=jobs&keyword_id=kwd-72980992225235:loc-170&matchType=p&ad_id=&device=c&adposition=&msclkid=924b12c6b0eb1e940284785f871186b9"
+                e>empleos</a>
+        </nav>
+
+        <div class="navegacion">
+            <a href="https://youtu.be/mXpWhmJXV0o?is=U3oSd9a9N075JrzY" target="_blank">publicar un empleo</a>
+            <!--el target="_blank" es para que se abra en otra pestaña del navegador-->
+            <!--rel="noopener norefferrer" es para que no se pueda acceder a la página de origen desde la nueva pestaña-->
+
+            <a href="">iniciar sesión</a>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <img src="IMAGENES/NAIENRAFA.jpg" alt="imagen 2019" width="200" />
+
+
+
+            <h1>Encuentra el trabajo de tus sueños</h1>
+
+            <p>Unete ala comunidad más grande de desarrolladores y encuentra tu próxima oportunidad</p>
+
+            <!--ahora vamos a crea un formulario-->
+            <form role="search">
+                <div>
+
+                    <!--importar svg desde la página "https://tabler.io/icons?icon=search" se importó la lupa-->
+
+                    <svg mlns="svg xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                        <path d="M21 21l-6 -6" />
+                    </svg>
+
+                    <!--para poder introducir texto en input type =tex hay variaos elementos como emaiol, password, number, ...color para elegir color de fodno, 
+                hay <input required type="tex" hay que rellenarlo antes de hacer clic en el
+                -->
+                    <input type="text" placeholder="Buscar empleos por titulo, habilidado empresa">
+
+
+                    <!--para poder introducir un boton-->
+                    <button type="submit">buscar</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <!--podemos insertar cualquier section en main, igualmente podemos insertar un encabezado (<header> en cualquier section)-->
+
+
+
+            <header>
+                <h2> ¿Porqué dev job?</h2>
+                <p> es la mejor plataforma de busqueda de empleo para desarrolladore.Conectamos alos mejores
+                    talentos con las empresas más innovadora.
+                </p>
+
+            </header>
+
+
+            <footer> <!--un footer lo podemos poner en cualquier section-->
+
+                <article> <!--un article o varios lo podemos poner en cualquier section-->
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-calendar">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12" />
+                        <path d="M16 3v4" />
+                        <path d="M8 3v4" />
+                        <path d="M4 11h16" />
+                        <path d="M11 15h1" />
+                        <path d="M12 15v3" />
+                    </svg>
+                    <h3>Encuentra tu trabajo ideal</h3>
+                    <p>Explora miles de ofertas de empleo y encuentra la que mejor se adapte a tus habilidades y
+                        aspiraciones
+                        profesionales.</p>
+                </article>
+
+                <article>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-user-search">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h1.5" />
+                        <path d="M15 18a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M20.2 20.2l1.8 1.8" />
+                    </svg>
+
+                    <h3>Conecta con las mejores empresas</h3>
+                    <p>Descubre oportunidades en compañías líderes de la industria y únete a un equipo que valore tu
+                        talento.</p>
+                </article>
+
+                <article>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-buildings">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 21v-15c0 -1 1 -2 2 -2h5c1 0 2 1 2 2v15" />
+                        <path d="M16 8h2c1 0 2 1 2 2v11" />
+                        <path d="M3 21h18" />
+                        <path d="M10 12v.01" />
+                        <path d="M10 16v.01" />
+                        <path d="M10 8v.01" />
+                        <path d="M7 12v.01" />
+                        <path d="M7 16v.01" />
+                        <path d="M7 8v.01" />
+                        <path d="M17 12v.01" />
+                        <path d="M17 16v.01" />
+                    </svg>
+                    <h3>Recibe alertas personalizadas</h3>
+                    <p>Configura alertas de empleo según tus preferencias y recibe notificaciones cuando se publiquen
+                        nuevas
+                        vacantes que coincidan con tu perfil.</p>
+                </article>
+        </section>
+        </footer>
+    </main>
+    <!--ahora despues del main pondremos la etiqueta footer -->
+
+
+    <footer>
+        <small>&copy; 2024 dev job. todos los derechos reservados.</small>
+
+    </footer>
+    tiempo video 1,15
+    direccion de pagina github de midudex
+    https://github.com/midudev/jscamp/tree/main
+
+
+
+</body>
+
+</html>
