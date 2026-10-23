@@ -41,54 +41,52 @@
     <main>
         <!--<section class="jobs-search"></section>-->
         <section class="jobs-search">
-            <div></div>
             <!--<img src="IMAGENES/NAIENRAFA.jpg" alt="imagen 2019" width="200" />-->
 
 
 
-            <h1>Encuentra tu próximo trabajo></h1>
+            <h1>Encuentra tu próximo trabajo</h1>
 
-            <p>Explora miles de oportunidades en el sector tecnológico</p>
+            <p>Explora miles de trabajos en el sector tecnologico</p>
 
             <!--ahora vamos a crea un formulario-->
             <form role="search">
-                <div>
+                <div class="search-bar">
 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+                            <path d="M21 21l-6 -6" />
+                        </svg>
 
-                    <!--importar svg desde la página "https://tabler.io/icons?icon=search" se importó la lupa-->
-
-                    <svg mlns="<svg xmlns=" http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                        <path d="M21 21l-6 -6" />
-                    </svg>
-
-                    <!--para poder introducir texto en input type =tex hay variaos elementos como emaiol, password, number, ...color para elegir color de fodno, 
+                        <!--para poder introducir texto en input type =tex hay variaos elementos como emaiol, password, number, ...color para elegir color de fodno, 
                 hay <input required type="tex" hay que rellenarlo antes de hacer clic en el
                 -->
-                    <input type="text" placeholder="Buscar empleos por titulo, habilidado empresa">
+                        <input type="text" aria-label="Buscar empleos" placeholder="Buscar empleos por título, habilidad o empresa">
 
 
-                    <!--para poder introducir un boton-->
-                    <button type="submit">buscar</button>
+
+
+                        <!--para poder introducir un boton-->
+                        <button type="submit">buscar</button>
                 </div>
+                
+
             </form>
         </section>
 
         <section>
-            <!--podemos insertar cualquier section en main, igualmente podemos insertar un encabezado (<header> en cualquier section)-->
 
 
-
-            <header>
+            <!--<header>
                 <h2> ¿Porqué dev job?</h2>
                 <p> es la mejor plataforma de busqueda de empleo para desarrolladore.Conectamos alos mejores
                     talentos con las empresas más innovadora.
                 </p>
 
-            </header>
+            </header>-->
 
 
             <footer> <!--un footer lo podemos poner en cualquier section-->
@@ -97,7 +95,15 @@
                     <div>
 
                         <h3>Desarrollador de Aplicaciones Móviles</h3>
-                        <small>Mobile Apps. Ltd. | Guadalajara</small>
+                        <small>Mobile Apps. Ltd. | Guadalaja<div>
+
+
+                                <!--para poder introducir texto en input type =tex hay variaos elementos como emaiol, password, number, ...color para elegir color de fodno, 
+                hay <input required type="tex" hay que rellenarlo antes de hacer clic en el
+                -->
+
+
+                            </div>a</small>
                         <p>
                             Buscamos un desarrollador de aplicaciones máviles con experiencia en iOS y/o Android. El
                             candidato debe tener conocimientos de Swuift. Kotlin y el desarrollo de interfaces de
